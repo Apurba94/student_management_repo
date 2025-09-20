@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_student_management_root" name="Student Management" sequence="10"/>
+
+    <menuitem id="menu_student_management_students" name="Students" parent="menu_student_management_root" sequence="1"/>
+    <menuitem id="menu_student_management_courses" name="Courses" parent="menu_student_management_root" sequence="2"/>
+
+    <record id="action_student_menu" model="ir.actions.act_window">
+        <field name="name">Students</field>
+        <field name="res_model">student.management.student</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_course_menu" model="ir.actions.act_window">
+        <field name="name">Courses</field>
+        <field name="res_model">student.management.course</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_student_action" name="Students" parent="menu_student_management_students" action="action_student_menu"/>
+    <menuitem id="menu_course_action" name="Courses" parent="menu_student_management_courses" action="action_course_menu"/>
+
+    <menuitem id="menu_students_by_course" name="Students by Course" parent="menu_student_management_root" action="student_management.action_report_wizard" sequence="3"/>
+</odoo>
