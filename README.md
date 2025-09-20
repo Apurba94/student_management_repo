@@ -43,9 +43,8 @@ Steps:
 - If access errors appear: check `ir.model.access.csv` names are correct.
 
 ## Contact / Demo
-- I recorded a 3–5 minute demo showing module features and code walkthrough. (Attach video link here)
 
 Thank you — I am available for a live demo and to explain code in detail during interview.
 
 Regards,
-Janin A Apurbo
+Janin A Apurba
